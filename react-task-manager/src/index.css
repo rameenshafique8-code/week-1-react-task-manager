@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Main App */
+.app {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Task Form */
+form {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  background: white;
+}
+
+form input:focus {
+  border-color: #2563eb;
+}
+
+form button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  background: #2563eb;
+  color: white;
+}
+
+form button:hover {
+  background: #1d4ed8;
+}
+
+/* Task List */
+.task-list {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual Task */
+li {
+  background: white;
+  margin-bottom: 10px;
+  padding: 14px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+li span {
+  flex: 1;
+  cursor: pointer;
+  font-size: 16px;
+  color: #222;
+}
+
+li span.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Delete Button */
+li button {
+  background: #dc2626;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+li button:hover {
+  background: #b91c1c;
+}
+
+/* Empty Task Message */
+.no-tasks {
+  width: 100%;
+  text-align: center;
+  padding: 25px 10px;
+  color: #666;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .app {
+    padding: 25px 15px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  form button {
+    width: 100%;
+  }
+
+  li {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  li button {
+    flex-shrink: 0;
+  }
+}
