@@ -19,7 +19,7 @@ If you are developing a production application, we recommend using TypeScript wi
 This project is a component-driven React application built with **Vite** as part of the **AUREX Full-Stack Internship Program (Month 2 - Week 1)**.
 ## 🚀 Live Demo & Links
 
-- **Live Deployment Link:** [Click Here to View Live App]()
+- **Live Deployment Link:** [Click Here to View Live App](https://week-1-react-task-manager-chi.vercel.app/)
 - **GitHub Repository Folder:** `week-1-react-task-manager`
 
 ## ✨ Features Implemented
